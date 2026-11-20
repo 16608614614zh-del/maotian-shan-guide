@@ -1,0 +1,48 @@
+
+:root{--navy:#20354e;--ink:#243332;--faint:#52605c;--brass:#80663b;--line:#d4cbb8;--paper:#f9f7f0;--serif:"Songti SC","Noto Serif CJK SC","STSong",serif;--sans:-apple-system,"PingFang SC","Microsoft YaHei",sans-serif}
+*{box-sizing:border-box}body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--sans)}img{display:block;width:100%;height:auto}a{color:inherit;text-underline-offset:.22em}a:focus-visible{outline:3px solid #ad7733;outline-offset:3px}
+header.site{background:var(--navy);color:#faf7ed;border-bottom:2px solid #b89e72}.bar,.container{width:min(100% - 2.5rem,65rem);margin:auto}.bar{min-height:54px;display:flex;align-items:center;justify-content:space-between;gap:1rem}.brand{font:700 1.28rem var(--serif);letter-spacing:.1em;color:#ecd7b1}.brand span{font:normal .8rem var(--sans);letter-spacing:.12em;border-left:1px solid #a49a86;margin-left:.6rem;padding-left:.6rem;color:#fff}.bar a{padding:.8rem 0;font-size:.87rem;text-decoration:none}
+h1,h2,h3,.motto{font-family:var(--serif);color:var(--navy);text-wrap:balance}h1{font-size:clamp(2.28rem,6vw,4rem);line-height:1.17;letter-spacing:-.025em;margin:.55rem 0 1rem}p{margin:.78rem 0;line-height:1.9}.hero{display:grid;grid-template-columns:1fr 1fr;align-items:center;gap:3rem;margin-top:clamp(1.6rem,4vw,3.5rem)}figure{margin:1.3rem 0}figcaption,.meta,.kind,.foot{color:var(--faint);font-size:.8rem;line-height:1.65}.kind,.meta{letter-spacing:.06em}.kind{font-weight:600;color:var(--brass)}.motto{font-size:clamp(1.2rem,3vw,1.72rem);font-weight:600;line-height:1.5;margin:.4rem 0 1rem}.hero p{max-width:33em}.hero figure{margin:0}.hero img{aspect-ratio:1.85;object-fit:cover;object-position:center 55%}figcaption{margin:.4rem 0 0}.choices{display:grid;grid-template-columns:1fr 1fr;gap:2rem;margin:1.5rem 0 2.6rem}.choice,.entry{display:grid;grid-template-columns:1fr auto;gap:1rem;align-items:center;border-top:1px solid var(--line);text-decoration:none;padding:1.3rem 0}.choice strong,.entry strong{display:block;font:700 clamp(1.32rem,3vw,1.8rem)/1.45 var(--serif);color:var(--navy)}.choice small,.entry small{display:block;color:var(--faint);line-height:1.7;font-size:.93rem;margin-top:.35rem}.arr{font:normal 1.2rem var(--sans);color:var(--brass)}.choice:hover strong,.entry:hover strong,.sibling:hover{text-decoration:underline}
+.letter{width:min(100% - 2.5rem,41rem);margin:2rem auto 3rem}.letter h1{font-size:clamp(2.05rem,5vw,3.45rem)}.letter h2{font-size:clamp(1.4rem,3vw,1.85rem);margin:2rem 0 .6rem}.copy p,.lede{font-size:1.09rem;line-height:1.95}.copy p{margin:1.05rem 0}.leadline{border-top:1px solid var(--line);margin-top:1.4rem;padding-top:.45rem}.crumb{font-size:.82rem;color:var(--faint);margin:0 0 1.2rem}.crumb a{display:inline-block;padding:.3rem 0}.entry{padding:1.08rem 0}.entry .kind{display:block;margin-bottom:.25rem}.entry strong{font-size:1.34rem}.src{border-top:1px solid var(--line);margin:1.7rem 0}.src summary{cursor:pointer;padding:.9rem 0;color:var(--faint);font-size:.88rem}.src a{display:block;padding:.4rem 0;font-size:.9rem;color:var(--navy)}.sibling{display:flex;align-items:center;justify-content:space-between;gap:1rem;text-decoration:none;border-block:1px solid var(--line);padding:1rem 0;color:var(--navy)}.foot{border-top:1px solid var(--line);padding:1rem 0;margin-top:2rem}.foot div{display:flex;justify-content:space-between}.plaque img{max-width:25rem}.sectionhead{font-size:1rem;font-family:var(--sans);font-weight:500;margin:2.1rem 0 -.9rem;color:var(--faint)}
+@media(max-width:700px){.hero{display:block}.hero img{aspect-ratio:2.45}.choices{display:block;margin-top:1.25rem}.choice{padding:.95rem 0;gap:.6rem}.hero p{line-height:1.78}.hero figure{margin:1rem 0}.letter{margin-top:1rem}.copy p{line-height:1.9}.sectionhead{margin-top:1.2rem}.motto{font-size:1.25rem}}@media(min-width:701px){.letter{margin-top:2.5rem}.choice{border-top:2px solid #97865f}.hero figure{align-self:center}}
+
+/* Carry the cover's indigo cloth and copper tones into the quieter reading pages. */
+header.site {
+  background-color: #163540;
+  border-bottom: 3px solid #a97750;
+}
+.site .bar { min-height: 58px; }
+.site .bar a {
+  min-height: 44px;
+  display: inline-flex;
+  align-items: center;
+  padding: .55rem .85rem;
+  color: #fff5df;
+  border: 1px solid #b4a389;
+  border-radius: 3px;
+}
+.site .bar a:hover { background-color: #264751; }
+.letter .entry { padding-inline-end: .4rem; }
+.letter .entry .arr {
+  display: grid;
+  place-items: center;
+  min-width: 2.15rem;
+  min-height: 2.15rem;
+  background: #163540;
+  color: #fff9e9;
+  border-radius: 50%;
+}
+.letter .sibling {
+  min-height: 48px;
+  margin-top: .6rem;
+  padding: .85rem 1rem;
+  background-color: #163540;
+  color: #fff9e9;
+  border: 0;
+}
+.letter .sibling + .sibling {
+  background-color: transparent;
+  color: #163540;
+  border: 1px solid #8d9895;
+}
+::selection { color: #fff; background: #82412c; }
