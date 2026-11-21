@@ -1,0 +1,36 @@
+/* Extend the approved dark textile system across the whole guide. */
+.logo-home{text-decoration:none}
+.culture-nav{display:flex;justify-content:center;gap:clamp(.25rem,2vw,1.5rem);width:min(calc(100% - 2rem),72rem);margin:0 auto;padding:.25rem 0 .7rem}
+.culture-nav a{display:flex;align-items:center;justify-content:center;min-height:44px;padding:.55rem 1.15rem;color:var(--soft);text-decoration:none;font-size:.94rem;border:1px solid transparent;position:relative}
+.culture-nav a[aria-current=page]{background:var(--surface);color:var(--gold);border-color:var(--seam)}
+.culture-nav a[aria-current=page]::after{content:"";position:absolute;bottom:3px;width:1.5rem;border-bottom:2px solid var(--gold)}
+.culture-nav a:hover{color:var(--gold);background:var(--surface)}
+.mast .logo-home:focus-visible{outline:3px solid var(--gold);outline-offset:4px}
+body.story-page .mast-inner,body.house-page .mast-inner,body.catalog-page .mast-inner{display:flex;align-items:center;justify-content:space-between;width:min(calc(100% - 2rem),72rem);margin:auto;min-height:4.1rem}
+.skip-link{position:absolute;left:1rem;top:-8rem;z-index:20;padding:.75rem;background:var(--gold);color:var(--night)}
+.skip-link:focus{top:1rem}
+.section-heading{display:flex;justify-content:space-between;align-items:baseline;gap:1rem}
+.section-heading p,.section-note{color:var(--faint);font-size:.9rem}
+.culture-paths{grid-template-columns:repeat(3,minmax(0,1fr));gap:1rem}
+.culture-paths .path.choice{display:flex;flex-direction:column}
+.culture-paths .path>img{height:10rem;object-fit:cover;object-position:75% center}
+.culture-paths .path-copy{flex:1;padding:1.2rem}
+.culture-paths .kind{font-size:.72rem;margin-bottom:.35rem;color:var(--gold)}
+.culture-paths .path h3{font-size:1.8rem}
+.culture-paths .path p{margin-bottom:1.1rem}
+.culture-paths .action{width:100%}
+.category-crumb{margin:1rem 0 .5rem}
+.section-intro{font-size:1.05rem;max-width:48rem;color:var(--soft);margin:.5rem 0 0}
+.theme-page .story-index{margin-top:1rem}
+.theme-page .entry{padding:1rem 0;grid-template-columns:clamp(6rem,10vw,9rem) minmax(0,1fr);gap:1.2rem}
+.theme-page .entry strong{color:var(--white);font-size:1.35rem}
+.theme-page .entry small{color:var(--soft)}
+.theme-page .entry .kind{color:var(--gold)}
+.theme-page .story-index .entry:first-child{grid-template-columns:1.1fr 1fr;gap:2rem;padding:0}
+.theme-page .story-index .entry:first-child strong{font-size:clamp(1.4rem,2.4vw,2rem)}
+.evidence-note{font-size:.9rem;line-height:1.8;color:var(--soft);padding:1rem;border-left:2px solid var(--gold);background:var(--surface);margin-top:1.5rem}
+.story-page .src p{font-size:.85rem;color:var(--soft)}
+@media(max-width:800px){.culture-paths{grid-template-columns:1fr}.culture-paths .path.choice{display:grid;grid-template-columns:32% minmax(0,1fr)}.culture-paths .path>img{height:100%}.culture-paths .path h3{font-size:1.5rem}.culture-paths .path-copy{padding:1rem}.culture-paths .action{width:auto}.section-heading{display:block}.section-heading p{margin:.25rem 0 .75rem}.theme-page .story-index{grid-template-columns:1fr}.theme-page .entry{grid-template-columns:29% minmax(0,1fr)}}
+@media(max-width:540px){.culture-nav{width:calc(100% - 1rem);gap:.1rem;padding-bottom:.5rem}.culture-nav a{flex:1;padding:.5rem .3rem;font-size:.85rem;white-space:nowrap}.culture-paths .path-copy{padding:.8rem}.culture-paths .kind{font-size:.75rem}.culture-paths .path h3{font-size:1.4rem}.culture-paths .path p{font-size:.84rem;margin:.35rem 0 .7rem}.theme-page .story-index .entry:first-child{display:block}.theme-page .entry strong{font-size:1.15rem}.category-crumb{font-size:.8rem}.section-intro{font-size:1rem}.theme-page .entry{gap:.85rem}.mast .place{font-size:.72rem}.mast .wordmark span{font-size:.78rem}.story-page .mast-inner{width:calc(100% - 1.5rem)}}
+
+.media-origin{display:block;font:400 .75rem/1.6 var(--sans);color:var(--faint);margin-top:.4rem}
